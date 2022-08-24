@@ -28,4 +28,6 @@ select{
     background-color: #fff;
 }
 
-
+.row.hidden{
+    display: none;
+}

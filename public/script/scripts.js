@@ -9,7 +9,23 @@ window.onload = ()=>{
     selectBox.addEventListener("change",(e)=>{
         loadSetting = selectBox.value;
         load("small.csv").then(r => console.log("Вызван метод load с настройкой: "+loadSetting));
-    })
+    });
+    myTable.addEventListener("click", (e)=>{
+        e = e.target.parentElement;
+        const currentElement = e;
+        if(e.hasAttribute("level")){
+            while(true){
+                if (+e.nextElementSibling.getAttribute("level") > +currentElement.getAttribute("level")){
+                    e.nextElementSibling.classList.toggle("hidden");
+                    e = e.nextElementSibling;
+                }
+                else{
+                    break;
+                }
+            }
+            //console.log(e.target.parentElement);
+        }
+    });
 }
 
 async function load(name) {
@@ -79,7 +95,6 @@ function createObjectsArrayFromData(data){
         else {
             reg = item.split(";");
         }
-
         l.fullName = reg[0];
         l.code1 = reg[1];
         l.code2 = reg[2];
