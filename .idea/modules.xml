@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/NAVProject.iml" filepath="$PROJECT_DIR$/.idea/NAVProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/myNodeJSTemp.iml" filepath="$PROJECT_DIR$/.idea/myNodeJSTemp.iml" />
     </modules>
   </component>
 </project>

@@ -1,41 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NAV</title>
+    <title>Pr4</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/styles.css"/>
-    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+    <script type="text/javascript" src="script/scripts.js"></script>
 </head>
 
 <body>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-    ym(86928268, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-    });
-</script>
-<%- include ('blocks/header.ejs') %>
-<% if(isAuth){ %>
-    <div>Вы вошли под учетной записью Нутфуллиной Айгуль Важитовны</div>
-<!--    <div style="width: 40%">-->
-<!--        <form name="numb" method="POST" action="/home">-->
-<!--            <input id="myNumber" class="input_form" placeholder="Введите количество" style="margin: 0"-->
-<!--                   type="number" name="myNumber" required="required">-->
-<!--            <input style="margin: 20px 0 10px 0" class="input_button" type="submit" name="submit_btn" value="Отправить">-->
-<!--        </form>-->
-<!--    </div>-->
-<% }
-else{ %>
-    <div>Вы не вошли</div>
-<% } %>
+<select name="downloadOptions" id="downloadOptions">
+    <option value="r" selected>RegExp</option>
+    <option value="s">Split</option>
+</select>
+<div id="my-table" class="my-grid"></div>
 </body>
 
 </html>
